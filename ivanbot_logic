@@ -1,0 +1,11 @@
+import random
+
+def generate_password(l):
+    s = "+-/*!&$#?=@<>123456789qwertyuiopasdfghjklzxcvbnm"
+    password = ""
+
+
+    for i in range(l):
+        password += random.choice(s)
+
+    return password
